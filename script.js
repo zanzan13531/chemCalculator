@@ -11,7 +11,7 @@ function search_topics() {
     input = input.toLowerCase();
     input = input.replace(/\s+/g, '');
 
-    var x = document.getElementsById('topic_list');
+    var x = document.getElementById('topic_list');
 
     x.innerHTML = "blank";
 
