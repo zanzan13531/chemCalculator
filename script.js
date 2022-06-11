@@ -13,11 +13,13 @@ function search_topics() {
 
     var x = document.getElementsById('topic_list');
 
+    x.innerHTML = "blank";
+
     if (topics.hasOwnProperty(input)) {
         var temp_array = topics[input];
         for (i = 0; i < temp_array; i++) {
             x.innerHTML = x.innerHTML + " " + topics[i];
         }
     }
-    
+
 }
