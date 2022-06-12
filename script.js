@@ -5,6 +5,7 @@ const topics = {
     "c" : ["topic_a", "topic_b", "topic_c"]
 };
 
+//called whenever a letter is entered into the searchbar
 function search_topics() {
 
     //takes and handles input
@@ -30,6 +31,7 @@ function search_topics() {
         }
 
     } else {
+        //case where no matching tags are found
         var no_result = document.createElement("p");
         no_result.innerHTML = "No matching results";
         x.appendChild(no_result);
@@ -37,6 +39,7 @@ function search_topics() {
 
 }
 
+//remvoes stuff from an html element
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
