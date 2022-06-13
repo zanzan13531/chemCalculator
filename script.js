@@ -6,7 +6,7 @@ const topics = {
 };
 
 //called whenever a letter is entered into the searchbar
-function search_topics() {
+function searchTopics() {
 
     //takes and handles input
     var input = document.getElementById('searchbar').value
@@ -15,7 +15,7 @@ function search_topics() {
     input = input.replace(/\s+/g, '');
 
     //prepares for the loop by resetting the results div
-    var x = document.getElementById('topic_list');
+    var x = document.getElementById('topicList');
     removeAllChildNodes(x);
 
     //if the input is one of the options for topic tags
