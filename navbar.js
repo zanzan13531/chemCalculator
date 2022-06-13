@@ -9,7 +9,7 @@ document.write('<nav class="navbar navbar-inverse">\
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1\
       <span class="caret"></span></a>\
       <ul class="dropdown-menu">\
-        <li><a href="subpages/addTwoNumbers.html">Topic A</a></li>\
+        <li><a href="subpages/addTwoNumbers.html">Add Two Numbers</a></li>\
         <li><a href="subpages/topic_b.html">Topic B</a></li>\
         <li><a href="subpages/topic_c.html">Topic C</a></li>\
       </ul>\
