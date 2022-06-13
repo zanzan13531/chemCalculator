@@ -1,6 +1,6 @@
 //topic tags
 const topics = {
-    "a" : ["topic_a"],
+    "a" : [["Add Two Numbers", "addTwoNumbers.html"]],
     "b" : ["topic_a", "topic_b"],
     "c" : ["topic_a", "topic_b", "topic_c"]
 };
@@ -15,26 +15,27 @@ function searchTopics() {
     input = input.replace(/\s+/g, '');
 
     //prepares for the loop by resetting the results div
-    var x = document.getElementById('topicList');
-    removeAllChildNodes(x);
+    var resultHolder = document.getElementById('topicList');
+    removeAllChildNodes(resultHolder);
 
     //if the input is one of the options for topic tags
     if (topics.hasOwnProperty(input)) {
 
-        var temp_array = topics[input];
+        var topicsArray = topics[input];
 
         //creates a button for each element and appends it to the container
-        for (i = 0; i < temp_array.length; i++) {
-            var temp_button = document.createElement("button");
-            temp_button.innerHTML = temp_array[i];
-            x.appendChild(temp_button);
+        for (i = 0; i < topicsArray.length; i++) {
+            var tempElement = document.createElement("a");
+            tempElement.setAttribute('href',"subpages/" + topicsArray[i][1]);
+            tempElement.innerHTML = topicsArray[i][0];
+            resultHolder.appendChild(tempElement);
         }
 
     } else {
         //case where no matching tags are found
-        var no_result = document.createElement("p");
-        no_result.innerHTML = "No matching results";
-        x.appendChild(no_result);
+        var noResult = document.createElement("p");
+        noResult.innerHTML = "No matching results";
+        resultHolder.appendChild(noResult);
     }
 
 }
