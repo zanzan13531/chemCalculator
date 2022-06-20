@@ -6,7 +6,7 @@ function hPlusToPh() {
 
     var resultBox = document.getElementById('result');
 
-    if ((number1 == NaN) || (number2 == NaN)) {
+    if (number1 == NaN) {
         resultBox.innerHTML = "Invalid Input";
     } else {
         resultBox.innerHTML = new BigNumber(-Math.log(10, number1.toNumber()));
