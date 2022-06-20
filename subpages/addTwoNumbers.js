@@ -11,7 +11,7 @@ function addTwoNumbers() {
     if ((number1 == NaN) || (number2 == NaN)) {
         resultBox.innerHTML = "Invalid Input";
     } else {
-        resultBox.innerHTML = new BigNumber(number1.plus(number2)).toString();
+        resultBox.innerHTML = number1.plus(number2);
     }
 
 }
