@@ -1,8 +1,8 @@
 //topic tags
 const topics = {
     "a" : [["Add Two Numbers", "addTwoNumbers.html"]],
-    "b" : [["Add Two Numbers", "addTwoNumbers.html"], ["topic_b", "topic_b.html"]],
-    "c" : [["Add Two Numbers", "addTwoNumbers.html"], ["topic_b", "topic_b.html"], ["topic_c", "topic_c.html"]]
+    "b" : [["Add Two Numbers", "addTwoNumbers.html"], ["[H+] to pH", "hPlusToPh.html"]],
+    "c" : [["Add Two Numbers", "addTwoNumbers.html"], ["[H+] to pH", "hPlusToPh.html"], ["topic_c", "topic_c.html"]]
 };
 
 //called whenever a letter is entered into the searchbar
